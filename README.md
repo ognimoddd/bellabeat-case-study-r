@@ -1,3 +1,18 @@
+## CASE STUDY: Bellabeat Fitness Data Analysis
+**Author: Domingo Guzman**
+
+**Date: October 21, 2022**
+#
+_The case study follows the six step data analysis process:_
+
+### ❓ [Ask](#step-1-ask)
+### 💻 [Prepare](#step-2-prepare)
+### 🛠 [Process](#step-3-process)
+### 📊 [Analyze](#step-4-analyze)
+### 📋 [Share](#step-5-share)
+### 🧗‍♀️ [Act](#step-6-act)
+
+#
 ![BellabeatLogo](https://user-images.githubusercontent.com/77591203/196562658-bfe5df3b-4e68-4c4e-97b8-d9c057d28dec.jpg)
 
 
@@ -6,7 +21,7 @@
 Bellabeat is a high-tech manufacturer of health-focused products for women. Collecting data on activity, sleep, stress, and reproductive health has allowed Bellabeat to empower women with knowledge about their own health and habits.
 Although Bellabeat is a successful small company, they have the potential to become a larger player in the global smart device market. Urška Sršen, cofounder and Chief Creative Officer of Bellabeat, believes that analyzing smart device fitness data could help unlock new growth opportunities for the company.
 
-## Step 1: Ask ❓
+## Step 1: Ask 
 
 ## Business Task 
 To identify potential opportunities for growth and provide recommendations for the Bellabeat marketing strategy improvement based on trends in smart device usage.
@@ -22,7 +37,7 @@ To identify potential opportunities for growth and provide recommendations for t
 2. How could these trends apply to Bellabeat customers?
 3. How could these trends help influence Bellabeat marketing strategy?
 
-## Step 2: Prepare 💻
+## Step 2: Prepare
 
 The data being used in this case study can be found here: [FitBit Fitness Tracker Data](https://www.kaggle.com/datasets/arashnic/fitbit) CC0: Public Domain, dataset made available through [Mobius](https://www.kaggle.com/arashnic)
 
@@ -47,8 +62,8 @@ library(tidyr)
 library(janitor)
 ```
 
-## Step 3: Process 🛠
-
+## Step 3: Process 
+[Back to top](#introduction)
 ### Importing the datasets
 
 ```
@@ -110,8 +125,8 @@ sleep$date <- format(sleep$SleepDay, format = "%m/%d/%y")
 Now that the dates are properly formatted and all dataframes have been checked for errors, I can start investigating the data.
 <br>
 <br>
-## Step 4: Analyze 🔬
-
+## Step 4: Analyze 
+[Back to top](#introduction)
 
 To beging the analysis phase, I will first see how many participants there are in each category.
 
@@ -197,7 +212,8 @@ head(merged_data)
 
 Now that the dataset has been merged we are ready to show our results through visualization.
 
-## Step 5: Share 📊
+## Step 5: Share 
+[Back to top](#introduction)
 <br>
 
 ```
@@ -262,7 +278,8 @@ geom_col(fill = "blue") + labs(title = "Daily Step Count")
 
 The bar graph above shows us that participants are most active on saturdays and least active on sundays.
 
-## Step 6: Act 🚴🏼
+## Step 6: Act 
+[Back to top](#introduction)
 <br>
 
 ![WomanRunning](https://user-images.githubusercontent.com/77591203/196829749-d6239570-d315-4fec-a449-f89a5e5cc064.jpg)
